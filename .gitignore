@@ -1,33 +1,392 @@
-# Build cache
-__pycache__/
-env/
-temp/
+# .gitignore file created for free with Tower (https://www.git-tower.com/)
+# For suggestions or improvements please contact us using support@git-tower.com
+# Generated on 2025-04-30
+# Includes: intellij, macos, python, pytorch, docker, sql, npm, pnpm
 
-# Ignore database files
-*.db
-*.sql
+### Universal ###
+# Common files that should be ignored in all projects
 
-# Ignore image files
-*.jpg
-*.jpeg
-*.png
-*.gif
-*.dng
-*.tif
-*.tiff
-
-# Ignore video files
-*.avi
-*.mp4
-*.mov
-*.mkv
-*.3gp
-
-# Additional file formats you might want to ignore
+# Logs
 *.log
+# Temporary files
 *.tmp
-*.bin
-*.npy
+*~
 
-# Ignore all .code-workspace files 
-*.code-workspace
+*.bak
+# Environment files (containing secrets, API keys, credentials)
+.env
+*.env
+.env.*
+
+# Local configuration that shouldn't be shared
+*.local
+
+### Intellij ###
+# IntelliJ IDEA editor files and settings
+
+# IntelliJ IDEA and Other JetBrains IDEs
+.idea/
+*.iml
+*.iws
+*.ipr
+
+.idea_modules/
+out/
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+
+.idea/shelf/
+.idea/contentModel.xml
+.idea/dataSources/
+.idea/dataSources.xml
+.idea/dataSources.ids
+
+.idea/dataSources.local.xml
+.idea/sqlDataSources.xml
+.idea/dynamic.xml
+.idea/uiDesigner.xml
+.idea/gradle.xml
+
+.idea/libraries
+.idea/deployment.xml
+.idea/mongoSettings.xml
+.idea/httpRequests
+.idea/caches/
+
+.idea/modules.xml
+.idea/compiler.xml
+.idea/jarRepositories.xml
+.idea/artifacts
+.idea/sonarlint/
+
+*.iml.bak
+*.ipr.bak
+*.iws.bak
+.idea_backup/
+.idea/replstate.xml
+
+.idea/checkstyle-idea.xml
+.idea/encodings.xml
+.idea/misc.xml
+.idea/vcs.xml
+.idea/jsLibraryMappings.xml
+
+.idea/assetWizardSettings.xml
+.idea/kotlinc.xml
+.idea/inspectionProfiles/
+.idea/codestream.xml
+.idea/aws.xml
+
+.idea/sonarIssues.xml
+.idea/.gitignore
+.idea/remote-mappings.xml
+.idea/**/usage.statistics.xml
+.idea/**/contentModel.xml
+
+.idea/**/dbnavigator.xml
+.idea/**/markdown-navigator.xml
+.idea/**/markdown-navigator-enh.xml
+.idea/**/markdown-navigator/
+.idea/$CACHE_FILE$
+
+.idea/**/azureSettings.xml
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+### Macos ###
+# macOS operating system specific files
+
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+
+Temporary Items
+.apdisk
+*.icloud
+.AppleDB/
+.AppleDesktop/
+
+*.AppleDouble
+*.AppleDB
+.Spotlight-V100/
+.Trashes/
+*.swp
+
+Network Trash Folder/
+.DS_Store?
+.Spotlight-V100
+.Trashes
+
+### Python ###
+# Python compiled files, virtual environments, and cache
+
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+pypackages/
+build/
+develop-eggs/
+dist/
+downloads/
+
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+
+.installed.cfg
+*.egg
+MANIFEST
+.venv
+env/
+
+venv/
+ENV/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# PyInstaller
+*.manifest
+*.spec
+# Installer logs
+pip-log.txt
+
+pip-delete-this-directory.txt
+# Unit test / coverage reports
+.tox/
+.nox/
+.coverage.*
+
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+cover/
+# Translations
+*.mo
+*.pot
+# Django
+
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+# Flask
+instance/
+
+.webassets-cache
+# Scrapy
+.scrapy
+# Sphinx
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+# pyenv
+#.python-version
+
+# pipenv
+#Pipfile.lock
+# poetry
+#poetry.lock
+# pdm
+
+.pdm.toml
+__pypackages__/
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath
+*.sage.py
+# Spyder
+.spyderproject
+.spyproject
+
+# Rope
+.ropeproject
+# mkdocs
+/site
+# mypy
+
+.mypy_cache/
+.dmypy.json
+dmypy.json
+# Pyre
+.pyre/
+
+# pytype
+.pytype/
+# Cython
+cython_debug/
+# Poetry
+
+poetry.toml
+# ruff
+.ruff_cache/
+# LSP
+pyrightconfig.json
+
+*.sage.py
+.pdm.toml
+profile_default/
+.nox/
+.spyproject
+
+site/
+
+### Pytorch ###
+# pytorch specific files
+
+# PyTorch specific
+*.pt
+*.pth
+*.th
+lightning_logs/
+
+runs/
+wandb/
+checkpoints/
+
+### Docker ###
+# Docker environment specific files and directories
+
+# Common directories to exclude
+node_modules/
+bower_components/
+target/
+dist/
+
+build/
+.cache/
+# Log files
+*.log
+logs/
+
+# Git-related files
+.git/
+.gitignore
+# Environment files
+.env
+
+.env.*
+# Temporary files
+*.tmp
+*.swp
+# IDE-specific files
+
+.idea/
+.vscode/
+# Docker-specific files
+Dockerfile.*
+docker-compose.override.yml
+
+.docker/
+docker-compose.override.yaml
+docker-compose.*.yml
+docker-compose.*.yaml
+*.env.docker
+
+docker-volumes/
+.docker-sync/
+docker/data/
+docker/logs/
+docker-compose.prod.yml
+
+docker-compose.dev.yml
+docker-compose.local.yml
+# CI/CD-related files
+.dockerignore
+
+### Sql ###
+# sql specific files
+
+*.sql.bak
+*.sql~
+
+### Npm ###
+# NPM package manager files and directories
+
+# NPM (Node Package Manager)
+node_modules/
+package-lock.json
+.npm/
+.node-gyp/
+
+npm-debug.log*
+.npmrc
+.npm-cache/
+.npm-global/
+.node_repl_history
+
+.env
+npm-shrinkwrap.json
+.npmignore
+.package-lock.json
+npm-debug.log.*
+
+.npm-debug/
+.npm-tmp/
+.npm-tarball/
+node_modules_*
+.npm-init.js
+
+.npm-update-notifier
+.node_modules.ember-try/
+.npm-version
+.node_history
+.v8flags.*
+
+.babel.json
+package.json.bak
+
+### Pnpm ###
+# pnpm package manager specific files
+
+# PNPM
+pnpm-lock.yaml
+pnpm-workspace.yaml
+.pnpm/
+.pnpm-debug.log
+
+.pnpm-store/
+pnpm-lock.yaml.bak
+.pnpmfile.cjs
+node_modules/
+.pnpm-cache/
